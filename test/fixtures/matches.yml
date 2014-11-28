@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_item_id: 1
+  second_item_id: 1
+
+two:
+  first_item_id: 1
+  second_item_id: 1
