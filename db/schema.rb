@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141128084451) do
+ActiveRecord::Schema.define(version: 20150108195710) do
 
   create_table "items", force: true do |t|
     t.string   "name"
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 20141128084451) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "value"
+    t.integer  "user_item_id"
   end
 
   create_table "matches", force: true do |t|

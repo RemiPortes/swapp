@@ -4,12 +4,23 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.all
+    @items = Item.all # TODO Item.mine
   end
 
   # GET /items/1
   # GET /items/1.json
   def show
+    @possible_match = Item.possible_match_for @item
+    @like = Like.new
+    #TODO @like.user = 
+    @like.user_item_id = @item.id
+    @like.item_id = @possible_match.id
+    @like.value = true
+    @dislike = Like.new
+    #TODO @dislike.user = 
+    @dislike.user_item_id = @item.id
+    @dislike.item_id = @possible_match.id
+    @dislike.value = false
   end
 
   # GET /items/new

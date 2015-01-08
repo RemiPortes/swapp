@@ -1,14 +1,18 @@
-<p id="notice"><%= notice %></p>
+<%= @item %><br/>
+<%= @possible_match %><br/>
 
-<p>
-  <strong>Name:</strong>
-  <%= @item.name %>
-</p>
+<%= form_for(@dislike) do |f| %>
+	<%= f.hidden_field :user_id %>
+	<%= f.hidden_field :user_item_id %>
+	<%= f.hidden_field :item_id %>
+	<%= f.hidden_field :value %>
+	<%= f.submit 'NON' %>
+<% end %>
 
-<p>
-  <strong>Owner:</strong>
-  <%= @item.owner_id %>
-</p>
-
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+<%= form_for(@like) do |f| %>
+	<%= f.hidden_field :user_id %>
+	<%= f.hidden_field :user_item_id %>
+	<%= f.hidden_field :item_id %>
+	<%= f.hidden_field :value %>
+	<%= f.submit 'OUI' %>
+<% end %>
