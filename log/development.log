@@ -2405,3 +2405,171 @@ ActionView::Template::Error (undefined local variable or method `item' for #<#<C
   Rendered /Users/sessiondev/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
   Rendered /Users/sessiondev/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /Users/sessiondev/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-08 20:05:57 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 1387ms (Views: 1374.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-08 20:05:59 +0100
+
+
+Started GET "/items/1" for 127.0.0.1 at 2015-01-08 20:06:23 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 118ms (Views: 113.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/1/edit" for 127.0.0.1 at 2015-01-08 20:06:29 +0100
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered items/_form.html.erb (25.8ms)
+  Rendered items/edit.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 136ms (Views: 133.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items/1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 112ms (Views: 109.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:35 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-08 20:12:41 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
