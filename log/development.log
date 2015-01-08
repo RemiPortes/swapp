@@ -2573,3 +2573,101 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-08 20:12:42 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 122ms (Views: 120.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:04 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-08 20:27:11 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 111ms (Views: 110.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-08 20:27:11 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:11 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:11 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:11 +0100
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:11 +0100
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:11 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:12 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:12 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-08 20:27:12 +0100
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2015-01-08 20:27:12 +0100
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2015-01-08 20:27:12 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2015-01-08 20:27:12 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-08 20:27:12 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-08 20:27:12 +0100
