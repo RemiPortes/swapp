@@ -9,3 +9,5 @@ FACEBOOK_APP_ID: ''
 FACEBOOK_APP_SECRET: ''
 
 Egalement à définir avec le Terminal en tapant  --->  heroku config:set FACEBOOK_APP_ID=idàvoirsurdevelopper.facebook FACEBOOK_APP_SECRET=secretàvoirsurdevelopper.facebook
+
+tuto: https://coderwall.com/p/bsfitw
