@@ -17,7 +17,6 @@ Bienvenue <strong><%= current_user.name %></strong> !
 <%= link_to "Se déconnecter", signout_path, id: "sign_out" %>
 <% else %>
 <%= link_to "Se connecter avec Facebook", "/auth/facebook", id: "sign_in" %>
-<img><%= current_user.pictures.create %></img>
 <% end %>
 </div>
 
