@@ -20,6 +20,10 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'rails_12factor'
 
+#FACEBOOK CONNNECT
+gem 'omniauth'
+gem 'omniauth-facebook', '1.4.0'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
