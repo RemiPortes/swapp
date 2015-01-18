@@ -49,3 +49,6 @@ gem 'annotate'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+gem 'aws-sdk'
+gem 'paperclip'

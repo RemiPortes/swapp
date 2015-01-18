@@ -6,6 +6,7 @@
 	<%= f.hidden_field :user_item_id %>
 	<%= f.hidden_field :item_id %>
 	<%= f.hidden_field :value %>
+	<%= image_tag item.photo.url(:medium) %>
 	<%= f.submit 'NON' %>
 <% end %>
 
@@ -14,5 +15,6 @@
 	<%= f.hidden_field :user_item_id %>
 	<%= f.hidden_field :item_id %>
 	<%= f.hidden_field :value %>
+	<%= image_tag item.photo.url(:medium) %>
 	<%= f.submit 'OUI' %>
 <% end %>
