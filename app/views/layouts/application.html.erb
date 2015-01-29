@@ -11,7 +11,8 @@
 <%= yield %>
 
 <div id="user-widget">
-<% if current_user %>
+<% if current_user %>	
+<br><%= image_tag(current_user.largeimage)%><br>
 Welcome <strong><%= current_user.name %></strong>!
 <%= link_to "Sign out", signout_path, id: "sign_out" %>
 <% else %>
