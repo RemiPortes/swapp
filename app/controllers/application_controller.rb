@@ -7,3 +7,11 @@ def current_user
 end
 helper_method :current_user
 end
+
+public
+def largeimage
+@largeimage ||= "http://graph.facebook.com/#{self.uid}/picture?type=large"
+end
+def image
+@mediumimage ||= "http://graph.facebook.com/#{self.uid}/picture?type=normal"
+end

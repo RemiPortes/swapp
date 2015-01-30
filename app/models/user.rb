@@ -6,6 +6,9 @@ class User < ActiveRecord::Base
       user.name     = auth.info.name
       user.oauth_token = auth.credentials.token
       user.oauth_expires_at = Time.at(auth.credentials.expires_at)
+      access_token = auth['token']
+      facebook = self::Facebook::API.new(access_token)
+      facebook.get_object("me?fields=name,picture")
       user.save
     end
 
