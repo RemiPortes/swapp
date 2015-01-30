@@ -8,17 +8,36 @@
 </head>
 <body>
 
-<%= yield %>
-
 <div id="user-widget">
 <% if current_user %>	
-<br><%= image_tag(current_user.largeimage)%><br>
-Welcome <strong><%= current_user.name %></strong>!
-<%= link_to "Sign out", signout_path, id: "sign_out" %>
+
+<%= yield %>
+
 <% else %>
-<%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+
+<%=image_tag("logoFull.png", alt: "Troker", :class => "logo")%>
+<div class="center"><%= link_to "Se connecter avec Facebook", "/auth/facebook", id: "sign_in", :class => "fb" %></div>
+
 <% end %>
 </div>
 
 </body>
+<% if current_user %>
+<footer>
+	<div class="footer">
+		<div class="row">
+			<% if items %><div class="col-xs-4"><% else %><div class="col-xs-4 active"><% end %>
+				<a href="/items"><span class="icon-menu"></span></a>
+			</div>
+			<% if matches %><div class="col-xs-4"><% else %><div class="col-xs-4 active"><% end %>
+				<a href="/matches"><span class="icon-favourites"></span></a>
+			</div>
+			<% if users %><div class="col-xs-4"><% else %><div class="col-xs-4 active"><% end %>
+				<a href="/users"><span class="icon-comments"></span></a>
+				<%= link_to "Se déconnecter", signout_path, id: "sign_out" %>
+			</div>
+		</div>
+	</div>
+</footer>
+<% end %>
 </html>

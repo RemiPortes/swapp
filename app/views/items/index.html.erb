@@ -1,3 +1,4 @@
+<% if current_user %>
 <header class="header-cont">
 			<div class="row">
 			<div class="col-xs-12">
@@ -7,11 +8,12 @@
 </header>
 <div class="profil" style="margin-top:70px">
 	<div class="fond" style="opacity:0.3;">
-		<%=image_tag("profil.jpg", alt: "profil")%>
+	<%= image_tag(current_user.largeimage)%>	
 	</div>
 	<div class="img-round" style="margin-top:-120px;height:120px">
-		<%=image_tag("profil.png", alt: "profil 2")%>
-		<p class="h4">Jeanne C.</p>
+		<%= image_tag(current_user.largeimage)%>
+		<p class="h4">
+		<%= current_user.name %></p>
 		<p class="h5">Bordeaux - Guingamp</p>
 	</div>
 </div>
@@ -53,20 +55,4 @@
 
 	</div>
 </div>
-
-
-<footer>
-	<div class="footer">
-	<div class="row">
-		<div class="col-xs-4">
-			<a href="/items"><span class="icon-menu"></span></a>
-		</div>
-		<div class="col-xs-4">
-			<a href="/matches"><span class="icon-favourites"></span></a>
-		</div>
-		<div class="col-xs-4 active">
-			<a href="/users"><span class="icon-comments"></span></a>
-		</div>
-	</div>
-	</div>
-</footer>
+<% end %>

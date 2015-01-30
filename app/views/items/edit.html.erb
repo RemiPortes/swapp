@@ -7,11 +7,11 @@
 </header>
 <div class="profil" style="margin-top:70px">
 	<div class="fond" style="opacity:0.3;">
-		<%=image_tag("profil.jpg", alt: "profil")%>
+		<%= image_tag(current_user.largeimage)%>
 	</div>
 	<div class="img-round" style="margin-top:-120px;height:120px">
-		<%=image_tag("profil.png", alt: "profil 2")%>
-		<p class="h4">Jeanne C.</p>
+		<%= image_tag(current_user.largeimage)%>
+		<p class="h4"><%= current_user.name %></p>
 		<p class="h5">Bordeaux - Guingamp</p>
 	</div>
 </div>

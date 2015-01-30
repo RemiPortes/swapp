@@ -1,3 +1,52 @@
 // Place all the styles related to the Items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	background: url(bg.jpg);
+}
+
+img{
+	display: block;
+	margin: 0 auto;
+}
+
+.logo{
+	width: 200px;
+	margin-top: 100px;
+	padding-left: 20px;
+}
+
+.fb {
+	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+	background-color:#637aad;
+	border-radius:10px;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	padding:6px 12px;
+	text-decoration:none;
+	margin:50px auto;
+	width:200px;
+}
+.fb:hover {
+	background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5972a7', endColorstr='#637aad',GradientType=0);
+	background-color:#5972a7;
+	text-decoration:none;
+	color:#ffffff;
+}
+.fb:visited {
+	color:#ffffff;
+}
+.fb:active {
+	position:relative;
+	top:1px;
+}
+
+.center {
+	margin:0 auto;
+}
