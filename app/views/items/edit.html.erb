@@ -1,6 +1,50 @@
-<h1>Editing item</h1>
+<header class="header-cont">
+			<div class="row">
+			<div class="col-xs-12">
+				<%=image_tag("Troker_orange.png", alt: "Logo")%>
+			</div>
+		</div>
+</header>
+<div class="profil" style="margin-top:70px">
+	<div class="fond" style="opacity:0.3;">
+		<%=image_tag("profil.jpg", alt: "profil")%>
+	</div>
+	<div class="img-round" style="margin-top:-120px;height:120px">
+		<%=image_tag("profil.png", alt: "profil 2")%>
+		<p class="h4">Jeanne C.</p>
+		<p class="h5">Bordeaux - Guingamp</p>
+	</div>
+</div>
+<div class="col-md-12">
+	<div class="row">
+			<div class="row section padding">
+			<div class="col-xs-12">
+				<div class="title">
+					<h1 class="h5" style="text-transform:uppercase;color:#ff8b00">Modifier le produit</h1>
+				</div>
+			</div>
+			</div>
+	</div>
+</div>
+
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @item %> |
 <%= link_to 'Back', items_path %>
+
+<footer>
+	<div class="footer">
+	<div class="row">
+		<div class="col-xs-4">
+			<a href="/items"><span class="icon-menu"></span></a>
+		</div>
+		<div class="col-xs-4">
+			<a href="/matches"><span class="icon-favourites"></span></a>
+		</div>
+		<div class="col-xs-4 active">
+			<a href="/users"><span class="icon-comments"></span></a>
+		</div>
+	</div>
+	</div>
+</footer>

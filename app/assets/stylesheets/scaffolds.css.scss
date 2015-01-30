@@ -7,7 +7,7 @@ body {
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: Myriad pro,verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -24,8 +24,7 @@ a {
     color: #666;
   }
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #ff8b00;
   }
 }
 
@@ -43,6 +42,19 @@ div {
   padding: 2px;
   background-color: red;
   display: table;
+}
+.padding {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.padding-bottom {
+	padding-bottom: 10px;
+	margin-top: -10px;
+}
+.name {
+text-align: left;
+padding-top: 15px;
+padding-left: 0;
 }
 
 #error_explanation {

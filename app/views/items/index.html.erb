@@ -1,27 +1,72 @@
-<h1>Listing items</h1>
+<header class="header-cont">
+			<div class="row">
+			<div class="col-xs-12">
+				<%=image_tag("Troker_orange.png", alt: "Logo")%>
+			</div>
+		</div>
+</header>
+<div class="profil" style="margin-top:70px">
+	<div class="fond" style="opacity:0.3;">
+		<%=image_tag("profil.jpg", alt: "profil")%>
+	</div>
+	<div class="img-round" style="margin-top:-120px;height:120px">
+		<%=image_tag("profil.png", alt: "profil 2")%>
+		<p class="h4">Jeanne C.</p>
+		<p class="h5">Bordeaux - Guingamp</p>
+	</div>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Owner</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="col-md-12">
+	<div class="row">
+			<div class="row section padding">
+			<div class="col-xs-6">
+				<div class="title">
+					<h1 class="h5" style="text-transform:uppercase;color:#ff8b00">Mes produits</h1>
+				</div>
+			</div>
+			
+			<div class="col-xs-6"style="height:35px">
+				<p class="h6" style="margin-top: 10px;font-weight: bold;"><%= link_to 'NOUVEAU +', new_item_path %></p>
+			</div>
+			</div>
+			<% @items.each do |item| %>
+			<div class="row section padding-bottom">
+				<div class="col-xs-4">
+					<div class="rond" style="float:right"></div>
+				</div>
+				<div class="col-xs-4 name">
+					<p id="<%= item.owner_id %>"><%= item.name %></p>
+				</div>
+				<div class="col-xs-1">
+					<%= link_to 'V', item %>
+				</div>
+				<div class="col-xs-1">
+					<%= link_to 'M', edit_item_path(item) %>
+				</div>
+				<div class="col-xs-1">
+					<%= link_to 'X', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+				</div>
+			</div>
+			
+				
+			<% end %>
 
-  <tbody>
-    <% @items.each do |item| %>
-      <tr>
-        <td><%= item.name %></td>
-        <td><%= item.owner_id %></td>
-        <td><%= link_to 'Show', item %></td>
-        <td><%= link_to 'Edit', edit_item_path(item) %></td>
-        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+	</div>
+</div>
 
-<br>
 
-<%= link_to 'New Item', new_item_path %>
+<footer>
+	<div class="footer">
+	<div class="row">
+		<div class="col-xs-4">
+			<a href="/items"><span class="icon-menu"></span></a>
+		</div>
+		<div class="col-xs-4">
+			<a href="/matches"><span class="icon-favourites"></span></a>
+		</div>
+		<div class="col-xs-4 active">
+			<a href="/users"><span class="icon-comments"></span></a>
+		</div>
+	</div>
+	</div>
+</footer>

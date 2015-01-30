@@ -1,0 +1,103 @@
+/* Icomoon*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-smqnca');
+	src:url('../fonts/icomoon.eot?#iefix-smqnca') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-smqnca') format('woff'),
+		url('../fonts/icomoon.ttf?-smqnca') format('truetype'),
+		url('../fonts/icomoon.svg?-smqnca#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-comments:before {
+	content: "\e600";
+}
+.icon-favourites:before {
+	content: "\e601";
+}
+.icon-arrows:before {
+	content: "\e602";
+}
+.icon-menu:before {
+	content: "\e603";
+}
+
+
+/* Fin Icomoon */
+
+/* Général */
+body{
+	text-align: center;
+}
+.icon-arrows{
+	color: #FFCF95;
+	font-size: 1.5em;
+}
+
+
+/* Header */
+header img {
+	max-width: 100px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.header-cont {
+	border-bottom: solid #FFCF95 3px;
+	background-color: #FFFFFF;
+    width:100%;
+    position:fixed;
+    top:0px;
+    z-index: 150;
+}
+
+header{
+    height:70px;
+    width:100%;
+}
+
+
+
+/* Footer */
+.footer{
+	background-color: #FF8B00;
+	width: 100%;
+	font-size: 2em;
+	padding-top: 10px;
+	bottom:0;
+    position:fixed;
+    z-index:150;
+    _position:absolute;
+    _top:expression(eval(document.documentElement.scrollTop+
+        (document.documentElement.clientHeight-this.offsetHeight)));
+    height:52px;
+}
+
+.footer a{
+	color: #FFCF95;
+	text-decoration: none;
+}
+
+.footer a:hover{
+	color: #FFFFFF;
+}
+
+.footer .active a {
+	color: #FFFFFF
+}
